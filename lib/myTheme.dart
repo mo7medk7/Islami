@@ -10,16 +10,27 @@ class myTheme {
       primaryColor: primaryLight,
       canvasColor: primaryLight,
       appBarTheme: AppBarTheme(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        centerTitle: true,
-      ),
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          centerTitle: true,
+          iconTheme: IconThemeData(color: Colors.black)),
       textTheme: TextTheme(
-          titleLarge: TextStyle(
-        fontSize: 30,
-        fontWeight: FontWeight.w700,
-        color: blackColor,
-      )),
+        titleLarge: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.w700,
+          color: blackColor,
+        ),
+        titleMedium: TextStyle(
+          fontSize: 25,
+          fontWeight: FontWeight.w600,
+          color: blackColor,
+        ),
+        titleSmall: TextStyle(
+          fontSize: 20,
+          fontWeight: FontWeight.w400,
+          color: blackColor,
+        ),
+      ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           showUnselectedLabels: true,
           showSelectedLabels: true,

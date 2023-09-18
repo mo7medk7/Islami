@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:islami_app/Home/HomeScreen.dart';
+import 'package:islami_app/Home/quran/Sura_Details.dart';
 import 'package:islami_app/myTheme.dart';
 
 void main (){
@@ -7,8 +8,6 @@ void main (){
 }
 
 class myApp extends StatelessWidget {
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,6 +15,7 @@ class myApp extends StatelessWidget {
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName: (context) => HomeScreen(),
+        SuraDetails.routeName: (context) => SuraDetails(),
       },
       theme: myTheme.LightTheme,
     );
