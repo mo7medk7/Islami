@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
-class RadioTab extends StatelessWidget {
+class RadioTab extends StatefulWidget {
+  @override
+  State<RadioTab> createState() => _RadioTabState();
+}
+
+class _RadioTabState extends State<RadioTab> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -25,7 +30,9 @@ class RadioTab extends StatelessWidget {
                       child: Image.asset("assets/images/next.png"))),
               Expanded(
                   child: InkWell(
-                      onTap: () {},
+                      onTap: () {
+                        setState(() {});
+                      },
                       child: Image.asset("assets/images/reasume.png"))),
               Expanded(
                   child: InkWell(
